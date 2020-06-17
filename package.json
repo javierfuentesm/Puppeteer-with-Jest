@@ -1,0 +1,21 @@
+{
+  "name": "jest-pptr",
+  "version": "1.0.0",
+  "description": "Jes with puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Javier Fuentes Mora",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.0.1",
+    "jest-puppeteer": "^4.4.0",
+    "puppeteer": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-jest": "^26.0.1"
+  }
+}
