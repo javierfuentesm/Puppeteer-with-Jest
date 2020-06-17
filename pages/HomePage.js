@@ -14,10 +14,10 @@ export default class HomePage extends BasePage {
   async clickHomePage() {
     await page.click("#homeMenu");
   }
-  async clickHomePage() {
-    await page.click("#homeMenu");
+  async clickOnlineBankingLink() {
+    await page.click("#onlineBankingMeni");
   }
-  async clickHomePage() {
-    await page.click("#homeMenu");
+  async clickFeedbackLink() {
+    await page.click("#feedback");
   }
 }
