@@ -1,6 +1,6 @@
-module.exports={
-    launch: {
-        headless:false,
-    },
-    browserContext: "default"
-}
+module.exports = {
+  launch: {
+    headless: false,
+  },
+  browserContext: "default",
+};
