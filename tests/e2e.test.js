@@ -25,4 +25,11 @@ describe("End to end example", function () {
       "Here comes a super long comment"
     );
   });
+  it("should login into the app", async () => {
+    await homePage.visit();
+    await topBar.isTopBarDisplayed();
+    await topBar.clickSingInButon();
+    await loginPage.isLoginFormDisplayed();
+    await loginPage.login("username", "password");
+  });
 });
