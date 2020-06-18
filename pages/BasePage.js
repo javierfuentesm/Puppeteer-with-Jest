@@ -12,4 +12,7 @@ export default class BasePage {
     await page.waitForSelector(selector);
     await page.click(selector);
   }
+  async screenshot() {
+    return await page.screenshot();
+  }
 }

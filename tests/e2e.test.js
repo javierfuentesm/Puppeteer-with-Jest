@@ -2,6 +2,8 @@ import HomePage from "../pages/HomePage";
 import TopBar from "../pages/components/TopBar";
 import LoginPage from "../pages/LoginPage";
 import FeedbackPage from "../pages/FeedbackPage";
+import registerAllureReporter from "jest-puppeteer-allure/src/registerAllureReporter";
+
 import { username, password, timeout } from "../config";
 
 describe("End to end example", function () {
@@ -14,8 +16,11 @@ describe("End to end example", function () {
     feedbackPage = new FeedbackPage();
   });
   it("should load homepage", async () => {
+    reporter.feature("Feature").story("Story");
     await homePage.visit();
     await homePage.isNavbarDisplayed();
+    const screenshot = await homePage.screenshot();
+    reporter.addAttachment("Screenshot", screenshot, "image/jpg");
   });
   it("should submit feedback", async () => {
     await homePage.clickFeedbackLink();

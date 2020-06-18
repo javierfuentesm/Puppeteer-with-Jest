@@ -9,7 +9,6 @@ module.exports = {
   // bail: 0,
   bail: 5,
 
-
   // The directory where Jest should store its cached dependency information
   // cacheDirectory: "/private/var/folders/8g/mv0mqpw95fbdz4ww_qx658t80000gn/T/jest_dx",
 
@@ -98,6 +97,7 @@ module.exports = {
 
   // Use this configuration option to add custom reporters to Jest
   // reporters: undefined,
+  reporters: ["default", "jest-puppeteer-allure"],
 
   // Automatically reset mock state between every test
   // resetMocks: false,
@@ -132,7 +132,7 @@ module.exports = {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
- // testEnvironment: "node",
+  // testEnvironment: "node",
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
